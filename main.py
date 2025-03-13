@@ -14,7 +14,7 @@ def extract_pages_with_keyword(keyword, case_sensitive=False):
         tuple: (başarılı_mı (bool), bulunan_sayfa_sayısı (int))
     """
     # Sabit dosya isimleri
-    input_pdf_path = "DOSYA ADI GIRIN"  # PDF dosyası script ile aynı klasörde
+    input_pdf_path = "DOSYA_ADI_GIRIN"
     output_pdf_path = "cikti.pdf"  # Çıktı sabit olarak "cikti.pdf"
 
     print(f"'{keyword}' ifadesi içeren sayfalar aranıyor: {input_pdf_path}")
