@@ -29,13 +29,13 @@ pip install PyPDF2
 1. Script içinde `input_pdf_path` değişkenini kendi PDF dosyanızın adıyla değiştirin:
 
 ```python
-input_pdf_path = "ornek.pdf"  # "DOSYA ADI GIRIN" yazan kısmı değiştirin
+input_pdf_path = "DOSYA_ADI_GIRIN"  # "DOSYA ADI GIRIN" yazan kısmı değiştirin
 ```
 
 2. Scripti çalıştırın:
 
 ```bash
-python pdf_arama.py
+python main.py
 ```
 
 3. Aramak istediğiniz kelime/ifadeyi girin
