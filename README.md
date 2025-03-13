@@ -1,48 +1,49 @@
-# PDF Arama Aracı
+# PDF Search Tool
 
-Bu araç, PDF dosyalarında belirli bir kelime veya ifade içeren sayfaları tespit edip, bu sayfalardan oluşan yeni bir PDF dosyası oluşturur.
+A tool that extracts pages containing specific keywords from PDF files and creates a new PDF with those pages. The program interface is in Turkish.
 
-## Özellikler
+## Features
 
-- PDF içerisinde anahtar kelime/ifade araması yapma
-- Büyük/küçük harf duyarlılığı seçeneği
-- Eşleşen sayfalardan yeni bir PDF dosyası oluşturma
-- İşlem detaylarını terminal ekranında gösterme
+- Search for keywords/phrases within PDF documents
+- Option for case-sensitive searching
+- Generate a new PDF file containing only matching pages
+- Display process details in terminal
 
-## Gereksinimler
+## Requirements
 
 - Python 3.x
-- PyPDF2 kütüphanesi
+- PyPDF2 library
 
-## Kurulum
+## Installation
 
-1. Gerekli kütüphaneyi yükleyin:
+1. Install the required library:
 
 ```bash
 pip install PyPDF2
 ```
 
-2. Programı indirin ve kullanıma başlayın.
+2. Download the program and start using it.
 
-## Kullanım
+## Usage
 
-1. Script içinde `input_pdf_path` değişkenini kendi PDF dosyanızın adıyla değiştirin:
+1. Replace the `input_pdf_path` variable in the script with your PDF filename:
 
 ```python
-input_pdf_path = "DOSYA_ADI_GIRIN"  # "DOSYA ADI GIRIN" yazan kısmı değiştirin
+input_pdf_path = "DOSYA_ADI_GIRIN"  # Replace the "DOSYA ADI GIRIN" part with your .pdf file
 ```
 
-2. Scripti çalıştırın:
+2. Run the script:
 
 ```bash
-python main.py
+python pdf_search.py
 ```
 
-3. Aramak istediğiniz kelime/ifadeyi girin
-4. Büyük/küçük harf duyarlılığını belirtin (E/H)
-5. Program eşleşen sayfaları içeren "cikti.pdf" dosyasını oluşturacaktır
+3. The program will run in Turkish:
+   - Enter the keyword when prompted for "PDF içinde aramak istediğiniz kelimeyi girin:"
+   - Choose case sensitivity by answering "E" (yes) or "H" (no) when asked "Büyük/küçük harf duyarlı arama yapmak istiyor musunuz? (E/H)"
+   - The program will create "cikti.pdf" containing the matching pages
 
-## Örnek Kullanım
+## Example Output (in Turkish)
 
 ```
 PDF içinde aramak istediğiniz kelimeyi girin:
@@ -60,8 +61,8 @@ Sayfa 17: Eşleşme bulundu
 - Çıktı dosyası: cikti.pdf
 ```
 
-## Notlar
+## Notes
 
-- Program, belirtilen kelimeyi içeren tüm sayfaları yeni PDF'e ekler
-- Çıktı dosyası her zaman "cikti.pdf" adıyla kaydedilir
-- PDF dosyası script ile aynı dizinde olmalıdır
+- The program adds all pages containing the specified keyword to the new PDF
+- The output file is always saved as "cikti.pdf"
+- The PDF file should be in the same directory as the script
